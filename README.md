@@ -1,4 +1,4 @@
-# Member System Web Project(C#)
+# Member System (C#)
 
 
 ## Goal
