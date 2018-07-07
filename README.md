@@ -27,16 +27,15 @@
 * Connect to SQL database and store the result
 * Additional member list page include all infomation about membership
 <br/>
-<br/>
 
 # Default Login info
 * Username: admin
 * Password: admin
 <br/>
-<br/>
-<br/> 
+
 To manage this login system, some kind of authorization is required. As a result, I implement a login system using Username and Password data within SQL database. Matching username and password will give user authorization to enter the main control page to check and manage the data within SQL database.
 <br/>
+
 Since this is the first time I use VS build in SQL database. I watched some video and online resource to learn database connecting, loading, altering method.
 
 
