@@ -1,0 +1,68 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Control.master.cs" Inherits="KiandraIT.Control" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server" >
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        body {
+            background-image: url("bg.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .auto-style1 {
+            width: 1758px;
+        }
+
+        .centerTable {
+            margin: 0px auto;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="centerTable";style="font-family:Arial; width: 1100px;">            
+            <tr>
+                <td colspan="2" style="width:1100px; height:80px; background-color:#99CCFF;text-align:center">
+                    <h1 class="auto-style1">
+                        Membership Management System
+                        </h1>
+                    </td>
+                </tr>
+            <tr>
+                <td colspan="2" style="height:40px;background-color:greenyellow; text-align:center">
+                    <asp:Button ID="ButtonHome" runat="server" Height="30px" OnClick="ButtonHome_Click" Text="Home Page" Width="150px" CausesValidation="False" />
+                    <asp:Button ID="ButtonNamelist" runat="server" CausesValidation="False" Height="30px" OnClick="ButtonNamelist_Click" Text="Name list" Width="150px" />
+                    <asp:Button ID="ButtonML" runat="server" Height="30px" OnClick="ButtonML_Click" Text="Member List" Width="150px" CausesValidation="False" />
+                    <asp:Button ID="ButtonAddNew" runat="server" Height="30px" OnClick="ButtonAddNew_Click" Text="Add New Member" Width="150px" CausesValidation="False" />
+                    <asp:Button ID="ButtonLogOut" runat="server" Height="30px" Text="Log Out" Width="150px" OnClick="ButtonLogOut_Click" CausesValidation="False" />
+                    </td>
+                </tr>
+
+            <tr>
+
+                <td style="height:500px; background-color:floralwhite; width:1100px">
+
+                    <div>
+                        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </td>
+                </tr>
+
+
+            </table>
+        </form>
+</body>
+</html>
+
+
+
+
